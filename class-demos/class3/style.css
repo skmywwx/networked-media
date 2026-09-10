@@ -1,0 +1,4 @@
+/* body as selector, the thing we are grabbing, applying rules to */
+body{
+    background-color:olive;
+}
