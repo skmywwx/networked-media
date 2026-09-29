@@ -58,7 +58,7 @@ window.onload = () => {
     //2 parameters: 
     //1. callback
     //2. amount of time in ms
-    
+    let rotation = 0; 
     setInterval(()=>{
         console.log('two seconds have passed')
         //two ways to retrive all elements of a class
@@ -84,6 +84,7 @@ window.onload = () => {
 
 // helper function go after window.onload{}
 function intervalFunction (){}
+
 
 // four javascript selectors; use document from the DOM
 // objects use curly brackets
