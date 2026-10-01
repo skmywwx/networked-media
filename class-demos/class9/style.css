@@ -1,0 +1,15 @@
+/* adding height & width */
+/* fills the entire webpage, works on every browser */
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+#text{
+    width: 500px;
+    height: 500px;
+    background-color:cadetblue;
+    margin-top: 40px;
+    margin-left: 100px;
+}

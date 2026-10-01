@@ -36,6 +36,7 @@ window.onload = () => {
 
     //query selector for ID works the smae as getElementById
     // loop function to produce multiple spans at the same time 
+    //queryselector is not live
     let containerDiv = document.querySelector('#blue-div')
     for (let i=0; i < 60; i++){
     //creating an element on a webpage:
