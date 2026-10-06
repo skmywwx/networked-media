@@ -1,0 +1,43 @@
+/* multiple selector using , */
+html, body{
+    box-sizing: border-box; 
+    /* vw=viewport width */
+    width: 100vw; 
+    /* vh = viewport height */
+    height: 100vh; 
+    /* padding: 10px;  */
+    /* removing scroll */
+    /* overflow: hidden; */
+    /* If I want to see the whole border */
+    margin: 0; 
+    /* change calculation to use margin-box to include margin, border, and padding */
+    
+    
+}
+
+/* separate selector jor just the body */
+body{
+    padding: 10px; 
+    border: 10px solid red; 
+}
+
+.parent{
+    background-color: orange; 
+    /* side by side with parent */
+    position: relative;
+}
+
+.child{
+    background-color:cadetblue;
+    position: absolute; 
+    /* kind of like margin, position from the top of the relative element */
+    top: 0; 
+    /* 33%from the right */
+    right: 33%; 
+    z-index: -100;
+}
+
+.child-2{
+    position: relative; 
+    z-inedx: 1; 
+}
