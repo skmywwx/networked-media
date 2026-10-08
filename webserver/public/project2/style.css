@@ -1,0 +1,444 @@
+/* webpage size styling */
+html, body{
+    box-sizing: border-box; 
+    width: 100vw;
+    height: 100vh; 
+    margin: 0; 
+    overflow: hidden; 
+    animation: backgroundChange; 
+    animation-duration: 28s; 
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count: infinite; 
+    animation-direction: normal; 
+    
+}
+
+/* W3 schools CSS */
+/* sun animation location positiong using div */
+/* Reference: https://youtube.com/shorts/BkKHL8lgWAE?si=FNnTPklPet4dwELt */
+.day{
+    width: 100vw; 
+    height: 100vh; 
+    margin: 0; 
+    padding: 0px; 
+    /* for testing */
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: center;
+    position: relative; 
+
+    /* align-items: center; */
+    animation: rotate; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
+
+}
+
+/* YouTube tutorials */
+/* sun rotation animation */
+#sun{
+    top: 70%; 
+    margin: auto; 
+    position: absolute; 
+    
+    /* transition: all; */
+    /* type of animation */
+    animation: rotate;
+    animation-timing-function: linear; 
+    /* length of animation */
+    animation-duration: 30s; 
+    /* number of times animation plays */
+    animation-iteration-count: infinite;
+    
+}
+
+/* moon rotation animation */
+#moon{
+    top: 70%;
+    margin: auto; 
+    position: absolute; 
+   
+    /* transition: all; */
+    /* type of animation */
+    animation: rotate2;
+    animation-timing-function: linear; 
+    /* length of animation */
+    animation-duration: 30s; 
+    /* number of times animation plays */
+    animation-iteration-count: infinite; 
+    /* https://www.youtube.com/watch?v=z2LQYsZhsFw */
+    /* animation-delay: 18s; */
+}
+
+/* YouTube tutorials */
+/* defining details of rotation animation */
+@keyframes rotate{
+
+    /* keyframe details of 0%, start of animation */
+    0%{
+        transform: rotate(-180deg) translate(460px);
+    }
+
+    /* keyframe details of 100%, end of animation */
+    100%{
+        transform: rotate(180deg) translate(460px); 
+    }
+}
+
+/* details of moon rotation animation */
+@keyframes rotate2{
+
+    /* keyframe details of 0%, start of animation */
+    0%{
+        transform: rotate(-180deg) translate(-460px);
+    }
+
+    /* keyframe details of 100%, end of animation */
+    100%{
+        transform: rotate(180deg) translate(-460px); 
+    }
+}
+
+/* defining background color change */
+/* color change between linear gradients is not very smooth */
+@keyframes backgroundChange{
+    /* background at 0% */
+    0%{
+        background-color:#dceefc; 
+        /* background: linear-gradient(to bottom, #dceefc, #72bcf5);  */
+    }
+
+    35%{
+        background-color:#81c5f5; 
+        /* background: linear-gradient(to bottom, #81c5f5, #f8eea3); */
+    }
+    
+    42%{
+        bakcground-color:rgb(244, 228, 165); 
+    }
+
+    50%{
+        background-color:rgb(243, 180, 22); 
+    }
+
+    60%{
+        background-color:rgb(7, 7, 49); 
+    }
+
+    90%{
+        background-color:rgb(61, 86, 196); 
+    }
+
+    93%{
+        background-color:rgb(156, 190, 252); ; 
+    }
+
+    100%{
+        background-color:rgb(220, 238, 252); 
+    }
+}
+
+/* done with background animation, now is time to street and street light */
+/* Reference: class10 demo */
+.street{
+    top: 90%; 
+    width: 100vw;  
+    height: 20%; 
+    background-color:rgb(83, 79, 75);
+    position: absolute;
+    z-index: 10; 
+
+    /* animation, color change matching background change */
+    animation: streetColor; 
+    animation-duration: 28s; 
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count: infinite; 
+}
+
+@keyframes streetColor{
+    0%{
+        background-color:rgb(127, 123, 121);
+    }
+
+    25%{
+        background-color:rgb(83, 79, 75);
+    }
+
+
+    75%{
+        background-color:rgb(13, 13, 15);
+    }
+
+    82%{
+         background-color:rgb(83, 79, 75);
+    }
+
+    100%{
+        background-color:rgb(127, 123, 121);
+
+    }
+}
+
+/* street lamp */
+/* street lamp position & general animation status */
+/* Reference for street lamp bulb: W3Schools CSS */
+#lamp{
+    top: 65%;  
+    left: 20%;
+    margin: auto; 
+    position: absolute;
+    z-index: 20; 
+}
+
+/* defining features of the street lamp bulb */
+#lightbulb{
+    height: 40px;
+    width: 40px; 
+    top: 74%; 
+    left: 28.65%; 
+    position: absolute; 
+    z-index: 19; 
+    background-color: rgb(67, 63, 63);
+    border-radius: 50%; 
+
+    /* animation, color change matching background change */
+    animation: lampColor; 
+    animation-duration: 28s; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
+}
+
+/* details of lamp bulb color change */
+@keyframes lampColor{
+    0%{
+        background-color: rgb(67, 63, 63);
+    }
+    55%{
+        background-color: rgb(67, 63, 63);
+    }
+
+    68%{
+        background-color: rgb(255, 243, 116);
+    }
+
+    70%{
+        box-shadow: 0 0 10px rgb(252, 242, 126), 0 0 30px rgb(249, 247, 227), 0 0 60px rgb(255, 255, 241); 
+    }
+
+    100%{
+        background-color: rgb(67, 63, 63);
+    }
+}
+
+/* New section, codes for apartment buildings */
+#apartment1{
+    height: 580px;
+    width: 350px; 
+    top: 20%; 
+    left: 40%; 
+    position: absolute; 
+    z-index: 18; 
+    background-color: rgb(67, 63, 63);
+}
+
+#apartment2{
+    height: 410px;
+    width: 220px; 
+    top: 40%; 
+    left: 24%; 
+    position: absolute; 
+    z-index: 18; 
+    background-color: rgb(67, 63, 63);
+    border-color:rgb(159, 159, 159); 
+    border-width: 5px; 
+}
+
+#apartment3{
+    height: 480px;
+    width: 180px; 
+    top: 32%; 
+    left: 65.5%; 
+    position: absolute; 
+    z-index: 18; 
+    background-color: rgb(67, 63, 63);
+}
+
+/* apartment windows */
+#a1 {
+    height: 62.5px; 
+    width: 150px; 
+    top: 24%; 
+    left: 41.5%; 
+    background-color: yellow; 
+    position: absolute; 
+    z-index:21;  
+
+    /* color change animation */
+    animation: aptColor; 
+    animation-duration: 28s; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
+} 
+#a2 {
+    height: 62.5px; 
+    width: 150px; 
+    top: 24%; 
+    left: 53%; 
+    background-color: yellow; 
+    position: absolute; 
+    z-index:21;  
+
+    /* color change animation */
+    animation: aptColor; 
+    animation-duration: 28s; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
+} 
+
+#a3 {
+    height: 62.5px; 
+    width: 150px; 
+    top: 38%; 
+    left: 41.5%; 
+    background-color: yellow; 
+    position: absolute; 
+    z-index:21;  
+
+    /* color change animation */
+    animation: aptColor; 
+    animation-duration: 28s; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
+} 
+#a4 {
+    height: 62.5px; 
+    width: 150px; 
+    top: 38%; 
+    left: 53%; 
+    background-color: yellow; 
+    position: absolute; 
+    z-index:21;  
+
+    /* color change animation */
+    animation: aptColor; 
+    animation-duration: 28s; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
+} 
+#a5 {
+    height: 62.5px; 
+    width: 150px; 
+    top: 52%; 
+    left: 41.5%; 
+    background-color: yellow; 
+    position: absolute; 
+    z-index:21;  
+
+    /* color change animation */
+    animation: aptColor; 
+    animation-duration: 28s; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
+} 
+#a6 {
+    height: 62.5px; 
+    width: 150px; 
+    top: 52%; 
+    left: 53%; 
+    background-color: yellow; 
+    position: absolute; 
+    z-index:21; 
+    
+    /* color change animation */
+    animation: aptColor; 
+    animation-duration: 28s; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
+} 
+#a7 {
+    height: 62.5px; 
+    width: 150px; 
+    top: 66%; 
+    left: 41.5%; 
+    background-color: yellow; 
+    position: absolute; 
+    z-index:21;  
+
+    /* color change animation */
+    animation: aptColor; 
+    animation-duration: 28s; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
+} 
+#a8 {
+    height: 62.5px; 
+    width: 150px; 
+    top: 66%; 
+    left: 53%; 
+    background-color: yellow; 
+    position: absolute; 
+    z-index:21;  
+
+    /* color change animation */
+    animation: aptColor; 
+    animation-duration: 28s; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
+} 
+
+/* details of apartment color change */
+@keyframes aptColor{
+    0%{
+        background-color: rgb(150, 150, 150);
+    }
+    62%{
+        background-color: rgb(253, 249, 186);
+    }
+
+    68%{
+        background-color: rgb(255, 243, 116);
+    }
+
+
+    100%{
+        background-color: rgb(150, 150, 150);
+    }
+}
+
+/* Reference: https://www.youtube.com/watch?v=Az5J_EkhYCY&t=16s */
+#message {
+    width: 300px; 
+    height: 80px; 
+    top: 20%; 
+    right: 10%; 
+    position: absolute; 
+    z-index: 22; 
+    display: none; 
+
+    /* font */
+    font-family:'Courier New', Courier, monospace; 
+    font-size: 18px; 
+    color: black; 
+    font-weight: 300; 
+    text-align: center; 
+
+    /* dialogue bubble look */
+    background-color: white; 
+    border-color: rgb(156, 190, 252);
+    border-style: solid; 
+    border-width: 2px; 
+ 
+    /* animation: messageShow;  */
+    /* animation-duration: 5s;
+    animation-iteration-count: infinite; */
+}
+
+/* @keyframes messageShow{
+    0%{
+        opacity: 1; 
+    }
+
+    100% {
+        opacity: 0; 
+    }
+} */
