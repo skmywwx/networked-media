@@ -203,7 +203,7 @@ html, body{
 
     /* animation, color change matching background change */
     animation: lampColor; 
-    animation-duration: 28s; 
+    animation-duration: 30s; 
     animation-timing-function: linear; 
     animation-iteration-count: infinite; 
 }
@@ -381,7 +381,7 @@ html, body{
 
     /* color change animation */
     animation: aptColor; 
-    animation-duration: 28s; 
+    animation-duration: 30s; 
     animation-timing-function: linear; 
     animation-iteration-count: infinite; 
 } 
