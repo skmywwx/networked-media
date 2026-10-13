@@ -8,3 +8,4 @@ console.log('log this info to the console')
 window.onload = () => {
     console.log('page has loaded')
 }
+
