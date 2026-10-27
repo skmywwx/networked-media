@@ -1,0 +1,68 @@
+<html>
+    <head>
+{# From class14 demo codes #}
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body class="talkB">
+{# Nav bar #} 
+        <nav class="nav">
+            <ul>><a href="/">Homepage</a> </ul>
+            <ul>><a href="/talk">Send message</a></ul>
+            <ul>><a href="/view-all">Forum</a></ul>
+        </nav>
+
+        <div class="heading">
+            <h1 class="heading1"><u>Anonymous Forum</u></h1>
+                <p class="heading1">This is an anonymous forum dedicated to reflecting on your personal life habits. 
+                Most importantly, this is meant for raising self-care awareness
+                and lead to better life habits!</p>
+                <p class="heading1"> What are moments that you felt guilty about treating your body badly? </p>
+                <p class="heading1"> <em>Share your stories as your body organs!</em></p>
+            <br>
+        </div>
+        <br>
+        <br>
+
+{# Selection features added for the form, reference from W3Schhols HTML tutorials #}
+        <form class="formB" method="POST" action="send-message">
+            <fieldset>
+                <legend>Persona: </legend>
+        {# adding selection buttons #}
+                <input type="radio" id="Heart" name="organ" value="Heart">
+                <label for="Heart">Heart</label>
+
+                <input type="radio" id="Brain" name="organ" value="Brain">
+                <label for="Brain">Brain</label>
+
+                <input type="radio" id="Stomach" name="organ" value="Stomach">
+                <label for="Stomach">Stomach</label>
+
+                <input type="radio" id="Lungs" name="organ" value="Lungs">
+                <label for="Lungs">Lungs</label>
+
+                <input type="radio" id="Eyes" name="organ" value="Eyes">
+                <label for="Eyes">Eyes</label>
+        
+                <br> 
+                <br>
+
+        {# adding labels for form features#}
+                <label for="user">User name:</label>
+                <br>
+                <input type="text" placeholder="write your name" name="user">
+                <br>
+                <label for ="message">Message:</label>
+                <br>
+                <input type="text" placeholder="write a message" name="message">
+        {# always we need to include a submit button #}
+                <input type="submit" value="send message">
+        {# Local time #}
+                <br>
+                <br>
+                <label for="time">Local time</label>
+                <input type="datetime-local" name="time">
+            </fieldset>
+        </form>
+    </body>
+</html>

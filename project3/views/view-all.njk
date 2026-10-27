@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+    </head>
+{# Based on code from Class15 demo #}
+{# Nav bar #}
+<body class="forumB">
+    {# Nav bar #}
+       <nav class="nav">
+            <ul>><a href="/">Homepage</a> </ul>
+            <ul>><a href="/talk">Send message</a></ul>
+            <ul>><a href="/view-all">Forum</a></ul>
+        </nav>
+
+    <div class="heading">
+        <h1 class="heading1"><u>Anonymous Forum</u></h1>
+            <p class="heading1">This is an anonymous forum dedicated to reflecting on your personal life habits. 
+                Most importantly, this is meant for raising self-care awareness
+                and lead to better life habits!</p>
+            <p class="heading1"> What are moments that you felt guilty about treating your body badly? </p>
+            <p class="heading1"> <em>Take a look at all the organ stories!</em></p>
+            
+            <br>
+    </div>
+    <br>
+    
+    {% for singleMessage in messagesArrayFromServer%}
+    {# trials of styling the outputs #}
+    <div class="talk">
+        <p>
+            <span><b>Time</b></span>
+            <span>{{singleMessage.time}}</span>
+        </p>
+
+        <p>
+            <span><b>Organ:</b></span>
+            <span>{{singleMessage.organ}}</span>
+        </p>
+        <p>
+            <span><b>User: </b></span>
+            <span>{{singleMessage.user}}</span>
+        </p>
+
+        <p>
+            <span><b>Message: </b></span>
+            <br>
+            <div class="messageB">{{singleMessage.message}} </div>
+        </p>
+    </div>
+    <br>
+    {%endfor%}
+</body>
+</html>

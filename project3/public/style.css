@@ -1,0 +1,120 @@
+/* HOMEPAGE STYLING */
+/* styling for the homepage background */
+.HomepageB{
+    background-color:rgba(247, 210, 216, 0.651);
+}
+
+/* Homepage images */
+/* .images{
+    display: block;
+    width: 100%;
+    height: auto; 
+} */
+
+/* Styling for the squares */
+.square1{
+    display:inline-block;
+    width:250px;
+    height:250px; 
+    background-color: white;
+}
+.square2{
+    display: inline-block;
+    width:250px;
+    height:250px; 
+    background-color: white;
+}
+.square3{
+    display: inline-block;
+    width:250px;
+    height:250px; 
+    background-color: white;
+}
+.square4{
+    display: inline-block;
+    width:250px;
+    height:250px; 
+    background-color: white;
+}
+.square5{
+    display: inline-block;
+    width:250px;
+    height:250px; 
+    background-color: white;
+    border-color: chocolate; 
+}
+
+/* Styling text */
+/* .yourT{
+    color:chocolate; 
+    Padding: 5px; 
+} */
+
+/* Styling position */
+.homepageO{
+    display: flex;
+    justify-content: center; 
+    /* align-items: center;  */
+    gap: 25px; 
+}
+
+/* More styling on the Homepage */
+.why{
+    background-color:white; 
+    font-size: 15px; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    padding: 10px; 
+    margin: 20px; 
+}
+
+/* FORM PAGE STYLING */
+/* styling for the form page background */
+.talkB{
+    background-color:rgba(247, 210, 216, 0.651);
+}
+
+.formB{
+    background-color:white;
+}
+
+/* FORUM PAGE STYLING */
+/* styling for array outpus */
+.talk{
+    background-color: rgba(197, 197, 197, 0.658);
+    border-style: dashed;
+    border-color:rgb(81, 81, 81);
+    padding: 5px; 
+    margin-left: 8px; 
+    margin-top: 10px; 
+}
+
+/* styling for forum page */
+.forumB{
+    background-color:rgba(247, 210, 216, 0.651);
+}
+
+/* styling for forum page background */
+.messageB{
+    background-color:rgb(230, 200, 185);
+    border-style:dashed; 
+    border-color:rgb(187, 185, 185);
+    border-width: 2px; 
+    padding: 5px; 
+}
+
+.heading {
+    background-color:rgba(251, 230, 188, 0.723);
+    margin: auto; 
+}
+
+.heading1{
+    padding-left: 10px; 
+}
+
+/* styling for the nav bar */
+.nav{
+    background-color:rgb(228, 252, 190);
+    margin-bottom: 20px; 
+}
+
+
