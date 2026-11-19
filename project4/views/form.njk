@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>class 20 demo</title>
+        {# optionally style form #}
+        <link href="style.css" rel="stylesheet">
+        {# Reference: project2 #}
+        <script src="main.js"></script>
+    </head>
+    <body>
+        {# Want to add a display of flex to the body #}
+       
+        <section class="left"></section>
+        <form method="POST" action="/add-data">
+            <h1>Today's recipe</h1>
+            <h2>Food ingredients</h2>
+            {# required and not-required #}
+            <input type="text" name="text" placeholder="leave a message"> 
+            <input type="text" name="username" placeholder="add your name">
+            {# Food ingredient selection, checkboxes #}
+            {# Reference: W3Schools input #}
+            <input type="checkbox" name="selections" id="foodm1" value="potato">
+            <label for="foodm1">🥔</label><br>
+            <input type="checkbox" name="selections" id="foodm2" value="tomato">
+            <label for="foodm1">🍅</label><br>
+            <input type="checkbox" name="selections" id="foodm3" value="carrot">
+            <label for="foodm1">🥕</label><br>
+            <input type="checkbox" name="selections" id="foodm4" value="cucumber">
+            <label for="foodm1">🥒</label><br>
+            <input type="checkbox" name="selections" id="foodm5"🥚 value="egg">
+            <label for="foodm1">🥚</label><br>
+            <input type="checkbox" name="selections" id="foodm6" value="meat">
+            <label for="foodm1">🥩</label><br>
+            <input type="checkbox" name="selections" id="foodm7" value="brocoli">
+            <label for="foodm1">🥦</label><br>
+
+            <h2>Main food choice</h2>
+            <input type="radio" name="mainFood" id="food1" value="rice">
+            <label for="food1">🍚</label>
+            <input type="radio" name="mainFood" id="food2" value="noodle">
+            <label for="food2">🍜</label>
+            <input type="radio" name="mainFood" id="food3" value="bread">
+            <label for="food3">🍞</label>
+            <input type="radio" name="mainFood" id="food4" value="spagetti">
+            <label for="food4">🍝</label>
+
+            <h2>Utensil</h2>
+            <input type="radio" name="utensil" id="utensil1" value="chopsticks">
+            <label for="utensil1">🥢</label>
+            <input type="radio" name="utensil" id="utensil2" value="spoon">
+            <label for="utensil2">🥄</label>
+            <input type="radio" name="utensil" id="utensil3" value="fork and knife">
+            <label for="utensil3">🍴</label>
+            
+            <input type="submit" value="send data">
+
+            {# Image input for three different body parts #}
+            {# file upload #}
+             {# Reference: Class15 class notes & class demo; w3Schools HTML input #}
+             {# Head #}
+            {# <label for="myFile">Head: </label>
+            <input type="file" value="upload an image" name="headImage" multiple> #}
+            {# Body #}
+            {# <label for="myFile">Body: </label>
+            <input type="file" value="upload an image" name="bodyImage" multiple> #}
+            {# Legs #}
+            {# <label for="myFile">Legs: </label>
+            <input type="file" value="upload an image" name="legsImage" multiple>#}
+
+        </form>
+        <section class="right"></section>
+    </body>
+</html>
